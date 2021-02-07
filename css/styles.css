@@ -1,0 +1,39 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: #5c91bd;
+    font-family: 'Lato',sans-serif;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    padding: 40px 20px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    /* Aqui se le puso align, en ves de justify c por que se cambio la orientacion a column, por lo que se hace la vairacion */
+}
+
+
+/* ------ ESTILOS GENERALES DE LAS TARJETAS --------*/
+.tarjeta{
+    width: 100%;
+    min-width: 550px;
+    position: relative;
+    color:#fff;
+    transform: rotateY(0deg);
+    transform-style:preserve-3d;
+    backface-visibility: hidden;
+    cursor: pointer;
+    z-index: 2;
+    background: #000;
+}
+
+.tarjeta .active{
+    transform: rotate(180deg);
+}
