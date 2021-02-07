@@ -1,46 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Tarjeta de credito dinamico</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lato&family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario de Tarjeta de credito dinamico</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
-    <div class="contenedor">
-        <section class="tarjeta" id="tarjeta">
-            <div class="delantera">
-                <div class="logo-marca">
-                    <img src="img/logos/visa.png" alt="">
-                </div>
-                <img src="img/chip-tarjeta.png" class="chip" alt="">
-                <div class="datos">
-                    <div class="grupo" id="numero">
-                        <p class="label">Numero Tarjeta</p>
-                        <p class="numero">#### #### #### ####ñ</p>
-                    </div>
-                    <div class="flexbox">
-                        <div class="grupo" id="nombre">
-                            <p class="label">Nombre Tarjeta</p>
-                            <p class="nombre">Jeff Bezos</p>
-                        </div>
 
-                        <div class="grupo" id="expiracion">
-                            <p class="label">expiracion</p>
-                            <p class="nombre"><span class="mes">MM</span> / <span class="año">AA</span></p>
-                        </div>
+  <div class="contenedor">
 
-                    </div>
-                </div>
+    <section class="tarjeta" id="tarjeta">
+      <div class="delantera">
+        <div class="logo-marca">
+          <img src="img/logos/visa.png" alt="" />
+        </div>
+        <img src="img/chip-tarjeta.png" class="chip" alt="" />
+        <div class="datos">
+          <div class="grupo" id="numero">
+            <p class="label">Numero Tarjeta</p>
+            <p class="numero">#### #### #### ####</p>
+          </div>
+          <div class="flexbox">
+            <div class="grupo" id="nombre">
+              <p class="label">Nombre Tarjeta</p>
+              <p class="nombre">Jeff Bezos</p>
             </div>
-        </section>
-    </div>
-    
 
-    <script src="https://kit.fontawesome.com/742dfea30d.js" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+            <div class="grupo" id="expiracion">
+              <p class="label">expiracion</p>
+              <p class="nombre">
+                <span class="mes">MM</span> / <span class="año">AA</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="trasera">
+        <div class="barra-magnetica"></div>
+        <div class="datos">
+          <div class="grupo" id="firma">
+            <p class="label">Firma</p>
+            <div class="firma">
+              <p></p>
+            </div>
+            <!-- Aqui se deja asi nomas con el P, ya que se llenara con js -->
+          </div>
+          <div class="grupo" id="ccv">
+            <p class="label">CCV</p>
+            <p class="CCV"></p>
+          </div>
+        </div>
+
+        <p class="leyenda">Lorem ipsum dolor sit amet consectetur adipisicing elit, Quas sed fugit adipisci voluptatem excepturi eaque doloribus.</p>
+        <a href="#" class="link-banco">www.tubanco.com</a>
+      </div>
+    </section>
+  </div>
+
+  <script src="https://kit.fontawesome.com/742dfea30d.js" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
 </body>
+
 </html>
