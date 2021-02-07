@@ -26,15 +26,16 @@ body{
     max-width: 550px;
     position: relative;
     color:#fff;
+    transition: .4s ease all;
     transform: rotateY(0deg);
     transform-style:preserve-3d;
-    backface-visibility: hidden;
+    /* backface-visibility: hidden; */
     cursor: pointer;
     z-index: 2;
     /* background: #000; */
 }
 
-.tarjeta .active{
+.tarjeta.active{
     transform: rotateY(180deg);
 }
 
@@ -122,7 +123,7 @@ body{
     justify-content: space-between;
 }
 
-.trasera .datos .p{
+.trasera .datos p{
     margin-bottom: 5px;
 }
 
